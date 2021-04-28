@@ -2,16 +2,56 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thumbspanel</title>
+    <style media="screen">
+      div {
+        border: 1px solid black;
+        background-color: green;
+        margin: 5px;
+        padding: 5px;
+      }
+      #content {
+        border: 5px dotted crimson;
+        background-color: chartreuse;
+        margin: auto;
+        width: 70%
+      }
+      .linksBox {
+       background-color: blueviolet;
+      }
+      a {}
+      a:hover {}
+      a:visited {}
+        body {
+          background-color: black;
+        }
+        @media only screen and (max-width: 600px) {
+          body {
+            background-color: lightblue;
+          }
+        }
+    </style>
   </head>
   <body>
+    <div id="content">
+    <div class="linksBox">
    <h1>Thumbspanel</h1>
-   <p><a href="http://172.21.3.4:5000/tutd?thumb=up">up</a></p>
-   <p><a href="http://172.21.3.4:5000/tutd?thumb=down">down</a></p>
-   <p><a href="http://172.21.3.4:5000/tutd?thumb=wiggle">wiggle</a></p>
-   <p><a href="http://172.21.3.4:5000/bgm?file=<attack_on_titan>&volume=<1.0>">bgm</a></p>
-   <p><a href="http://172.21.3.4:5000/perc?amount=50">perc</a></p>
-   <p><a href="http://172.21.3.4:5000/say?phrase=got socks">say</a></p>
-   <p><a href="http://172.21.3.4:5000/color?hex=000000">color</a></p>
+   <p>This is not for human eyes.</p>
+    </div>
+    <div class="linksBox">
+      <p><a href="http://172.21.3.4:5000/tutd?thumb=up">up</a></p>
+      <p><a href="http://172.21.3.4:5000/tutd?thumb=down">down</a></p>
+      <p><a href="http://172.21.3.4:5000/tutd?thumb=wiggle">wiggle</a></p>
+      <p><a href="http://172.21.3.4:5000/tutd?thumb=oops">oops</a></p>
+   </div>
+   <div class="linksBox">
+      <p><a href="game.html">Game</a></p>
+      <p><a href="http://172.21.3.4:5000/bgm?file=greenOnions&volume0.2 ">bgm</a></p>
+      <p><a href="http://172.21.3.4:5000/perc?amount=99">perc</a></p>
+      <p><a href="http://172.21.3.4:5000/say?phrase=BigOoooof">say</a></p>
+      <p><a href="http://172.21.3.4:5000/color?hex=000000">color</a></p>
+   </div>
+   </div>
   </body>
 </html>
