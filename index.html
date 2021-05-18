@@ -1,57 +1,48 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thumbspanel</title>
-    <style media="screen">
-      div {
-        border: 1px solid black;
-        background-color: green;
-        margin: 5px;
-        padding: 5px;
-      }
-      #content {
-        border: 5px dotted crimson;
-        background-color: chartreuse;
-        margin: auto;
-        width: 70%
-      }
-      .linksBox {
-       background-color: blueviolet;
-      }
-      a {}
-      a:hover {}
-      a:visited {}
-        body {
-          background-color: black;
-        }
-        @media only screen and (max-width: 600px) {
-          body {
-            background-color: lightblue;
-          }
-        }
-    </style>
-  </head>
-  <body>
-    <div id="content">
-    <div class="linksBox">
-   <h1>Thumbspanel</h1>
-   <p>This is not for human eyes.</p>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thumbspanel</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div id="content">
+    <div id="headerBox">
+      <h1>Thumbspanel</h1>
+      <p>Welcome to my website.</p>
+      <p id= 'paraBox'></p>
     </div>
     <div class="linksBox">
       <p><a href="http://172.21.3.4:5000/tutd?thumb=up">up</a></p>
       <p><a href="http://172.21.3.4:5000/tutd?thumb=down">down</a></p>
       <p><a href="http://172.21.3.4:5000/tutd?thumb=wiggle">wiggle</a></p>
       <p><a href="http://172.21.3.4:5000/tutd?thumb=oops">oops</a></p>
-   </div>
-   <div class="linksBox">
+    </div>
+    <div class="textBox">
+      <img src="img/Javan.jpg" alt="A smilling frog." />
+      <p>This is a smilling frog it is happy because you came to viset him.</p>
+      <img src="img/Minecraft.jpg" alt="Old Minecraft loading screen." />
+      <p>This is a picture of the old Minecraft loading screen.</p>
+      <img src="img/gta.jpg" alt="Gta loading screen." />
+      <p>This is gta it is a pretty fun go you should try if you have not yet.</p>
+    </div>
+    <div class="linksBox">
       <p><a href="game.html">Game</a></p>
       <p><a href="http://172.21.3.4:5000/bgm?file=greenOnions&volume0.2 ">bgm</a></p>
       <p><a href="http://172.21.3.4:5000/perc?amount=99">perc</a></p>
       <p><a href="http://172.21.3.4:5000/say?phrase=BigOoooof">say</a></p>
       <p><a href="http://172.21.3.4:5000/color?hex=000000">color</a></p>
-   </div>
-   </div>
-  </body>
+    </div>
+  </div>
+  <script type="text/javascript">
+  var box = ['sword', 'pickaxe', 'shovel', 'cure for cancer'];
+  var rando = Math.random() * 4
+  rando = Math.floor(rando)
+  document.getElemementById('paraBox').innerHTML = box[rando]
+</script>
+</body>
+
 </html>
